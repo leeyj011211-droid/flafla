@@ -36,32 +36,32 @@
     <div class="container mx-auto px-4 -mt-20 relative z-20">
         
         <div class="max-w-md mx-auto bg-white rounded-3xl shadow-xl p-6 mb-8 border border-gray-100">
-            <div class="space-y-4">
-                <div>
-                    <label class="block text-xs font-bold text-gray-400 mb-1 ml-1">출발지 (START)</label>
-                    <div class="relative">
-                        <input id="start" type="text" placeholder="예: 부산역" class="w-full bg-gray-50 text-gray-800 font-bold border-0 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 transition-all placeholder-gray-400">
-                    </div>
-                </div>
+    <div class="space-y-4">
+        <div class="relative">
+            <label class="block text-xs font-bold text-gray-400 mb-1 ml-1">출발지 (START)</label>
+            <input id="start" type="text" placeholder="예: 서울역" autocomplete="off" 
+                   class="w-full bg-gray-50 text-gray-800 font-bold border-0 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 transition-all">
+            <div id="autocomplete-start" class="hidden absolute left-0 right-0 bg-white shadow-2xl rounded-xl border border-gray-100 z-[100] max-h-48 overflow-y-auto mt-1"></div>
+        </div>
 
-                <div id="autocomplete" class="hidden absolute bg-white shadow-xl rounded-xl border border-gray-100 w-64 z-50 max-h-48 overflow-y-auto"></div>
-
-                <div class="flex justify-center -my-2 relative z-10">
-                    <div class="bg-gray-100 rounded-full p-2 border-4 border-white">
-                        <span class="text-gray-400">⬇</span>
-                    </div>
-                </div>
-
-                <div>
-                    <label class="block text-xs font-bold text-gray-400 mb-1 ml-1">목적지 (END)</label>
-                    <input id="end" type="text" placeholder="예: 수원역" class="w-full bg-gray-50 text-gray-800 font-bold border-0 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 transition-all placeholder-gray-400">
-                </div>
-
-                <button onclick="requestRoute()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-blue-200 transform transition hover:scale-[1.02] active:scale-[0.98]">
-                    🔍 맛집 로드 검색하기
-                </button>
+        <div class="flex justify-center -my-2 relative z-10">
+            <div class="bg-gray-100 rounded-full p-2 border-4 border-white">
+                <span class="text-gray-400">⬇</span>
             </div>
         </div>
+
+        <div class="relative">
+            <label class="block text-xs font-bold text-gray-400 mb-1 ml-1">목적지 (END)</label>
+            <input id="end" type="text" placeholder="예: 부산역" autocomplete="off"
+                   class="w-full bg-gray-50 text-gray-800 font-bold border-0 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 transition-all">
+            <div id="autocomplete-end" class="hidden absolute left-0 right-0 bg-white shadow-2xl rounded-xl border border-gray-100 z-[100] max-h-48 overflow-y-auto mt-1"></div>
+        </div>
+
+        <button onclick="requestRoute()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl shadow-lg transition-transform active:scale-95">
+            🔍 맛집 로드 검색하기
+        </button>
+    </div>
+</div>
 
         <div id="empty-state" class="mt-16 text-center text-gray-400">
             <div class="inline-block p-4 rounded-full bg-gray-100 mb-4">
