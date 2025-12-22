@@ -7,7 +7,7 @@ class Database:
         self.connection = None
         try:
             self.connection = pymysql.connect(
-                host=os.getenv("DB_HOST", "localhost"),
+                host=os.getenv("DB_HOST", "mariadb"),
                 port=int(os.getenv("DB_PORT", 3306)),
                 database=os.getenv("DB_NAME", "highway"),
                 user=os.getenv("DB_USER", "root"),
@@ -92,3 +92,4 @@ class Database:
         if self.connection:
             self.connection.close()
             print("MariaDB 연결이 종료되었습니다.")
+
