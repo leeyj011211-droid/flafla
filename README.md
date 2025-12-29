@@ -1,8 +1,10 @@
 # 🛣highwayload
 
+
 # 📍프로젝트 정보
 ## 1. 제작기간
 2025.12.16. - 2025.12.22.
+
 
 ## 2. 참여인원
 |header|Description|
@@ -14,21 +16,30 @@
 |권민지|MariaDB구성|
 
 
+
 ## 3. 역할분담
 프론트엔드, API
+
+
 
 # 📍사용 기술
 ## 1. Framework
 * Python Flask
+
+  
 ## 2. Front-end
 * HTML5
 * Tailwind Css
 * JavaSripts
 * Jinja2
+
+  
 ## 3.API
 * Kakao Maps
 * 공공데이터
 * Jemini
+
+  
 ## 4. Database
 * MariaDB
 
