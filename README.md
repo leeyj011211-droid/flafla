@@ -13,13 +13,22 @@
 |류건우|로직 구성, 외부 키 최적화|
 |권민지|MariaDB구성|
 
-> 5명
-> 박민우, 신민서, 이유진, 류건우, 권민지
 
 ## 3. 역할분담
 프론트엔드, API
 
 # 📍사용 기술
-## 1. Back-end
+## 1. Framework
+* Python Flask
 ## 2. Front-end
+* HTML5
+* Tailwind Css
+* JavaSripts
+* Jinja2
+## 3.API
+* Kakao Maps
+* 공공데이터
+* Jemini
+## 4. Database
+* MariaDB
 
